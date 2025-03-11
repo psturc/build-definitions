@@ -129,7 +129,11 @@ spec:
       args: ["$(params.exclude[*])"]
       script: |
         #!/bin/bash
+        set -x
         set -euo pipefail
+
+        echo $PATH
+        whoami
 
         echo -n "${AGENT_VERSION}" > "$(results.sealights-agent-version.path)"
 
