@@ -96,7 +96,7 @@ spec:
       image: quay.io/konflux-ci/tekton-integration-catalog/sealights-nodejs:latest@sha256:cb3ba4e3e4956bdf05fd896f55c389f429801bb62ae6bdf9fbcdd332b96d5d0c
       workingDir: /opt/app-root/src/app
       securityContext:
-        runAsUser: 1001
+        runAsUser: 0
       env:
         - name: COMPONENT
           value: $(params.component)
