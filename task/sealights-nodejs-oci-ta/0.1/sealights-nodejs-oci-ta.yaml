@@ -133,9 +133,7 @@ spec:
         set -euo pipefail
 
         echo $PATH
-        whoami
-        ls -la /opt/app-root/src/.npm-global/bin/
-        ls -la /opt/app-root/src/.npm-global/bin/slnodejs
+        ls -la /opt/app-root/src/
 
         echo -n "${AGENT_VERSION}" > "$(results.sealights-agent-version.path)"
 
