@@ -75,12 +75,8 @@ spec:
     - name: sealights-credentials
       secret:
         secretName: sealights-credentials
-    - name: workdir
-      emptyDir: {}
   stepTemplate:
     volumeMounts:
-      - mountPath: /opt/app-root
-        name: workdir
       - name: sealights-credentials
         mountPath: /usr/local/sealights-credentials
   steps:
